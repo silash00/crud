@@ -1,26 +1,14 @@
 {
   "todos": [
     {
-      "id": "91d2214e-8875-413f-9778-015189050a5c",
-      "date": "2024-02-28T01:08:26.533Z",
+      "id": "66797781-1a77-4b7b-834f-43d3478062dd",
+      "date": "2024-02-28T01:49:38.060Z",
       "content": "Primeira TODO",
       "done": false
     },
     {
-      "id": "44e66389-6e2d-4599-9155-fd3988bb3c52",
-      "date": "2024-02-28T01:08:26.534Z",
-      "content": "Primeira TODO 1",
-      "done": false
-    },
-    {
-      "id": "597939b6-a4f5-4078-9a76-a7ab152be68b",
-      "date": "2024-02-28T01:08:26.534Z",
-      "content": "Primeira TODO 2",
-      "done": false
-    },
-    {
-      "id": "eb210372-5eb4-4c78-bff4-e0ee3ed71cc8",
-      "date": "2024-02-28T01:08:26.534Z",
+      "id": "68ac55f9-7114-4c59-a848-01f25554cfd5",
+      "date": "2024-02-28T01:49:38.062Z",
       "content": "BOMBAPATCH!",
       "done": true
     }
