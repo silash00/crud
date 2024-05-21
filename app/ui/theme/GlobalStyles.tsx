@@ -1,4 +1,6 @@
 "use client";
+import React from "react";
+
 const basePadding = "5%";
 const breakpoint = "850px";
 
@@ -62,7 +64,7 @@ export default function GlobalStyles({ themeName }: { themeName?: ThemeName }) {
   };
 
   return (
-    <style jsx global>
+    <style global jsx>
       {`
         :root {
           --color-basic-light: #fff;

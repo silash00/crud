@@ -1,3 +1,4 @@
+import React from "react";
 import GlobalStyles from "@ui/theme/GlobalStyles";
 
 const bg =
