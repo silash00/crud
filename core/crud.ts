@@ -2,8 +2,6 @@ import fs from "fs"; //ES6
 import { v4 as uuid } from "uuid";
 const DB_FILE_PATH = "./core/db";
 
-console.log("[CRUD]");
-
 type UUID = string;
 
 interface Todo {
@@ -80,8 +78,6 @@ function deleteById(id: UUID) {
     return true;
   });
 
-  console.log("todosWithousOne", todosWithoutOne);
-
   fs.writeFileSync(
     DB_FILE_PATH,
     JSON.stringify(
@@ -110,6 +106,3 @@ update(terceiraTodo.id, {
 updateContentById(terceiraTodo.id, "BOMBAPATCH!");
 
 const todos = read();
-
-console.log(todos);
-console.log(todos.length);
