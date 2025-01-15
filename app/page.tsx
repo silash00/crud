@@ -4,6 +4,21 @@ import GlobalStyles from "@/ui/theme/GlobalStyles";
 const bg =
   "https://images.unsplash.com/photo-1517971071642-34a2d3ecc9cd?q=80&w=1588&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
 
+const todos = [
+  {
+    id: "4049b5a1-831c-4ffc-aece-8f98845beb11",
+    date: "2024-07-10T01:49:50.721Z",
+    content: "Primeira TODO",
+    done: false,
+  },
+  {
+    id: "073d78fd-554b-45f7-abfe-37c2ed420a3d",
+    date: "2024-07-10T01:49:50.722Z",
+    content: "BOMBAPATCH!",
+    done: true,
+  },
+];
+
 export default function Page() {
   return (
     <main>
@@ -42,22 +57,18 @@ export default function Page() {
           </thead>
 
           <tbody>
-            <tr>
-              <td>
-                <input type="checkbox" />
-              </td>
-              <td>d4f26</td>
-              <td>
-                Conteúdo de uma TODO Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Eaque vero facilis obcaecati, autem aliquid
-                eius! Consequatur eaque doloribus laudantium soluta optio odit,
-                provident, ab voluptates doloremque voluptas recusandae
-                aspernatur aperiam.
-              </td>
-              <td align="right">
-                <button data-type="delete">Apagar</button>
-              </td>
-            </tr>
+            {todos.map((todo) => (
+              <tr key={todo.id}>
+                <td>
+                  <input type="checkbox" defaultChecked={todo.done} />
+                </td>
+                <td>{todo.id.substring(0, 4)}</td>
+                <td>{todo.content}</td>
+                <td align="right">
+                  <button data-type="delete">Apagar</button>
+                </td>
+              </tr>
+            ))}
 
             <tr>
               <td colSpan={4} align="center" style={{ textAlign: "center" }}>
