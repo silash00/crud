@@ -1,16 +1,52 @@
 {
   "todos": [
     {
-      "id": "cb84b611-a8c7-4297-88c8-21b7529e4875",
-      "date": "2025-01-15T02:17:54.640Z",
-      "content": "Primeira TODO",
+      "id": "bf2708bb-8a01-4370-bd7e-50efcd93d9de",
+      "date": "2025-02-04T00:53:46.003Z",
+      "content": "Estudar TypeScript",
       "done": false
     },
     {
-      "id": "c2bde15f-71f2-4a12-b4c5-3fc2eb2f3a47",
-      "date": "2025-01-15T02:17:54.643Z",
-      "content": "BOMBAPATCH!",
-      "done": true
+      "id": "23b12184-e9fb-495f-913b-cfbdf02bd08e",
+      "date": "2025-02-04T00:53:46.003Z",
+      "content": "Estudar React",
+      "done": false
+    },
+    {
+      "id": "d585e6c8-9c0f-400a-a1c1-4b15a68f234b",
+      "date": "2025-02-04T00:53:46.003Z",
+      "content": "Estudar Next.js",
+      "done": false
+    },
+    {
+      "id": "6e7927cf-1c8f-4984-bc0b-882ed925977f",
+      "date": "2025-02-04T00:53:46.003Z",
+      "content": "Estudar Node.js",
+      "done": false
+    },
+    {
+      "id": "d4522a28-cf52-4029-8e6a-87652bbcedfa",
+      "date": "2025-02-04T00:53:46.004Z",
+      "content": "Estudar Express",
+      "done": false
+    },
+    {
+      "id": "7d81ff20-9683-4a02-824d-8e18c2d44400",
+      "date": "2025-02-04T00:53:46.004Z",
+      "content": "Estudar MongoDB",
+      "done": false
+    },
+    {
+      "id": "6ca4b52d-88bc-4050-b77a-a4ed8f8b310c",
+      "date": "2025-02-04T00:53:46.004Z",
+      "content": "Estudar MySQL",
+      "done": false
+    },
+    {
+      "id": "5cd3809b-144f-4e6f-a902-b36c6dd06a0c",
+      "date": "2025-02-04T00:53:46.004Z",
+      "content": "Estudar PostgreSQL",
+      "done": false
     }
   ]
 }

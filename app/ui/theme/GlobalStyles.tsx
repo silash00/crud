@@ -100,6 +100,9 @@ export default function GlobalStyles({ themeName }: { themeName?: ThemeName }) {
           padding: 0;
           box-sizing: border-box;
         }
+        header {
+          background-image: url("/bg-crud.avif");
+        }
         button {
           border: none;
           cursor: pointer;

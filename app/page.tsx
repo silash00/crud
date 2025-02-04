@@ -1,33 +1,31 @@
+"use client";
+
+import { useState, useEffect } from "react";
 import React from "react";
 import GlobalStyles from "@/ui/theme/GlobalStyles";
 
-const bg =
-  "https://images.unsplash.com/photo-1517971071642-34a2d3ecc9cd?q=80&w=1588&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
-
-const todos = [
-  {
-    id: "4049b5a1-831c-4ffc-aece-8f98845beb11",
-    date: "2024-07-10T01:49:50.721Z",
-    content: "Primeira TODO",
-    done: false,
-  },
-  {
-    id: "073d78fd-554b-45f7-abfe-37c2ed420a3d",
-    date: "2024-07-10T01:49:50.722Z",
-    content: "BOMBAPATCH!",
-    done: true,
-  },
-];
-
 export default function Page() {
+  interface Todo {
+    id: string;
+    content: string;
+    done: boolean;
+  }
+
+  const [todos, setTodos] = useState<Todo[]>([]);
+
+  useEffect(() => {
+    async function fetchTodos() {
+      const response = await fetch("/api/todos");
+      const data = await response.json();
+      setTodos(data.todos);
+    }
+    fetchTodos();
+  }, []);
+
   return (
     <main>
       <GlobalStyles themeName="coolGrey" />
-      <header
-        style={{
-          backgroundImage: `url('${bg}')`,
-        }}
-      >
+      <header>
         <div className="typewriter">
           <h1>O que fazer hoje?</h1>
         </div>

@@ -94,15 +94,13 @@ function CLEAR_DB() {
   fs.writeFileSync(DB_FILE_PATH, "");
 }
 
-CLEAR_DB();
-create("Primeira TODO");
-const segundaTodo = create("Segunda TODO");
-deleteById(segundaTodo.id);
-const terceiraTodo = create("Terceira TODO");
-update(terceiraTodo.id, {
-  content: "Segunda TODO com novo content!",
-  done: true,
-});
-updateContentById(terceiraTodo.id, "BOMBAPATCH!");
+// CLEAR_DB();
+// create("Estudar TypeScript");
+// create("Estudar React");
+// create("Estudar Next.js");
+// create("Estudar Node.js");
+// create("Estudar Express");
+// create("Estudar MongoDB");
+// create("Estudar MySQL");
 
 const todos = read();
