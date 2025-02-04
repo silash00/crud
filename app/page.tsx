@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import React from "react";
 import GlobalStyles from "@/ui/theme/GlobalStyles";
+import { todoController } from "@/ui/controller/todo";
 
 export default function Page() {
   interface Todo {
@@ -14,12 +15,11 @@ export default function Page() {
   const [todos, setTodos] = useState<Todo[]>([]);
 
   useEffect(() => {
-    async function fetchTodos() {
-      const response = await fetch("/api/todos");
-      const data = await response.json();
-      setTodos(data.todos);
+    async function fetchData() {
+      const todos = await todoController.get();
+      setTodos(todos);
     }
-    fetchTodos();
+    fetchData();
   }, []);
 
   return (
